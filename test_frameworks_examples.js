@@ -34,7 +34,7 @@ expect3.toBeTrue()
 
 ////// SECOND WAY
 
-var expect = {
+var expect = { 
   toEqual: function(assertion, expectation) {
     if (assertion === expectation) {
       console.log "cool"
