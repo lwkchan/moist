@@ -3,11 +3,18 @@ function notepadIsEmpty() {
   expect.toBeEmpty(notepad.content);
 };
 
-notepadIsEmpty();
-
-function notepadNameIsDefined(params) {
+function notepadNameIsDefined() {
   var notepad = new Notepad('Terryblnotes');
   expect.toBeTrue(notepad.name != undefined);
 }
 
-notepadNameIsDefined();
+function notepadNameCanBeSet() {
+  var notepad = new Notepad('Terryblnotes');
+  expect.toEqual(notepad.name, 'Terryblnotes');
+}
+
+function notepadCanIncludeColors() {
+  var notepad = new Notepad();
+  notepad.colors.push('white');
+  expect.toInclude(notepad.colors, 'white');
+}
