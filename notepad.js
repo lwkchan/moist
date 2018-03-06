@@ -1,3 +1,4 @@
-function Notepad() {
+function Notepad(name) {
   this.content = []
+  this.name = name
 }
