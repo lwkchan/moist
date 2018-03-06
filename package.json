@@ -1,0 +1,20 @@
+{
+  "name": "moisty",
+  "version": "0.0.1",
+  "description": "A moist package to test your application using vanilla JS",
+  "main": "test_frameworks_examples.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwkchan/moist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lwkchan/moist/issues"
+  },
+  "homepage": "https://github.com/lwkchan/moist#readme"
+}
