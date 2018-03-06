@@ -1,0 +1,3 @@
+function Notepad() {
+  this.content = []
+}

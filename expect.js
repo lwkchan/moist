@@ -1,4 +1,4 @@
-var expect = {
+const expect = { //vars are accessible everywhere, even when module.
   toEqual: function(assert, expect) {
     return (assert === expect ? "Equality test passed." : (assert + " does not equal " + expect + ". The test failed."))
   },
