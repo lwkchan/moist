@@ -1,31 +1,31 @@
-describe("Notepad", function() {
+describe('Notepad', function() {
+  var notepad;
 
+  before.beforeEach(function() {
+    notepad = new Notepad();
+    console.log('calling before each...');
+  });
 
-  beforeEach(function() {
-    var notepad = new Notepad();
-  })
-
-  it("----> it is empty*", function() {
+  it('----> it is empty*', function() {
     expect.toBeEmpty(notepad.content);
-  })
+  });
 
-  it("----> it is empty**", function() {
-    notepad.content.push("ehehhehhe")
+  it('----> it is empty**', function() {
+    notepad.content.push('ehehhehhe');
     expect.toBeEmpty(notepad.content);
-  })
+  });
 
-  it("----> it is empty***", function() {
+  it('----> it is empty***', function() {
     expect.toBeEmpty(notepad.content);
-  })
+  });
 
-  it("----> it includes hehehe", function() {
-    notepad.content.push("hehehe")
-    expect.toInclude(notepad.content, "hehehe");
-  })
+  it('----> it includes hehehe', function() {
+    notepad.content.push('hehehe');
+    expect.toInclude(notepad.content, 'hehehe');
+  });
 
-  it("----> it includes hihihi", function() {
-    notepad.content.push("hehehe")
-    expect.toInclude(notepad.content, "hihihi");
-  })
-
-})
+  it('----> it includes hihihi', function() {
+    notepad.content.push('hehehe');
+    expect.toInclude(notepad.content, 'hihihi');
+  });
+});
