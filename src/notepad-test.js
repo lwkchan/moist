@@ -1,20 +1,24 @@
-(function notepadIsEmpty() {
-  var notepad = new Notepad();
-  expect.toBeEmpty(notepad.content);
-})();
-
-(function notepadNameIsDefined() {
-  var notepad = new Notepad('Terryblnotes');
-  expect.toBeTrue(notepad.name != undefined);
-})();
-
-(function notepadNameCanBeSet() {
-  var notepad = new Notepad('Terryblnotes');
-  expect.toEqual(notepad.name, 'Terryblnotes');
-})();
-
-(function notepadCanIncludeColors() {
-  var notepad = new Notepad();
-  notepad.colors.push('white');
-  expect.toInclude(notepad.colors, 'white');
-})();
+describe('Notepad', function() {
+  var notepad;
+  before.beforeEach(function() {
+    notepad = new Notepad();
+  });
+  it('----> it is empty*', function() {
+    expect.toBeEmpty(notepad.content);
+  });
+  it('----> it is empty**', function() {
+    notepad.content.push('ehehhehhe');
+    expect.toBeEmpty(notepad.content);
+  });
+  it('----> it is empty***', function() {
+    expect.toBeEmpty(notepad.content);
+  });
+  it('----> it includes hehehe', function() {
+    notepad.content.push('hehehe');
+    expect.toInclude(notepad.content, 'hehehe');
+  });
+  it('----> it includes hihihi', function() {
+    notepad.content.push('hehehe');
+    expect.toInclude(notepad.content, 'hihihi');
+  });
+});
