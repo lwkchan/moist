@@ -7,7 +7,6 @@ describe('Notepad', function() {
   });
 
   it('----> it is empty*', function() {
-    console.log(spyOn());
     expect.toBeEmpty(notepad.content);
   });
 
@@ -31,6 +30,7 @@ describe('Notepad', function() {
   });
 
   it('testing the spy', function() {
+    console.log('testing the spy');
     spyOn(notepad, 'displayNotes');
   });
 });

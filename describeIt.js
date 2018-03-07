@@ -27,7 +27,9 @@ const spyOn = function(object, string) {
     callback();
     // spiedOnObject[spiedOnMethod]
     if (spyOn() !== undefined) {
+      console.log("spyon is defined");
       if (spiedOnObject[spiedOnMethod] === undefined) {
+        console.log('spy object is undefined');
         throw new Error('Spy was not called');
       }
     }
