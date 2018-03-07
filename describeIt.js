@@ -1,10 +1,3 @@
-// var Before = function() {};
-//
-// Before.prototype.beforeEach = function(callback) {
-//  this.callback = callback;
-// };
-//
-// var before = new Before();
 var beforeEachCallback;
 
 const beforeEach = function(callback) {
