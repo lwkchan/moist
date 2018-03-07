@@ -1,7 +1,7 @@
 describe('Notepad', function() {
   var notepad;
 
-  before.beforeEach(function() {
+  beforeEach(function() {
     notepad = new Notepad();
     console.log('calling before each...');
   });

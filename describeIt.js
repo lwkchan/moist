@@ -1,25 +1,30 @@
-var Before = function() {};
+// var Before = function() {};
+//
+// Before.prototype.beforeEach = function(callback) {
+//  this.callback = callback;
+// };
+//
+// var before = new Before();
+var beforeEachCallback;
 
-Before.prototype.beforeEach = function(callback) {
- this.callback = callback;
+const beforeEach = function(callback) {
+  beforeEachCallback = callback;
 };
 
-var before = new Before();
-
 (function(exports) {
- function describe(string, callback) {
-   console.log('%c' + string, 'color: darkblue');
-   callback();
- }
+  function describe(string, callback) {
+    console.log('%c' + string, 'color: darkblue');
+    callback();
+  }
 
- function it(string, callback) {
-   console.log(string);
-   if (before.callback !== undefined) {
-     before.callback();
-   }
-   callback();
- }
+  function it(string, callback) {
+    console.log(string);
+    if (beforeEachCallback !== undefined) {
+      beforeEachCallback();
+    }
+    callback();
+  }
 
- exports.describe = describe; // exports it to global scope
- exports.it = it; // exports it to global scope
+  exports.describe = describe; // exports it to global scope
+  exports.it = it; // exports it to global scope
 })(this);
