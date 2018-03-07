@@ -1,7 +1,16 @@
 var beforeEachCallback;
+var spiedOnObject;
+var spiedOnMethod;
+// var spy;
 
 const beforeEach = function(callback) {
   beforeEachCallback = callback;
+};
+
+const spyOn = function(object, string) {
+  // var spy = object[string];
+  spiedOnObject = object;
+  spiedOnMethod = string;
 };
 
 (function(exports) {
@@ -16,6 +25,12 @@ const beforeEach = function(callback) {
       beforeEachCallback();
     }
     callback();
+    // spiedOnObject[spiedOnMethod]
+    if (spyOn() !== undefined) {
+      if (spiedOnObject[spiedOnMethod] === undefined) {
+        throw new Error('Spy was not called');
+      }
+    }
   }
 
   exports.describe = describe; // exports it to global scope

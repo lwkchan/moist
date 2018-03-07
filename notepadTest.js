@@ -7,6 +7,7 @@ describe('Notepad', function() {
   });
 
   it('----> it is empty*', function() {
+    console.log(spyOn());
     expect.toBeEmpty(notepad.content);
   });
 
@@ -27,5 +28,9 @@ describe('Notepad', function() {
   it('----> it includes hihihi', function() {
     notepad.content.push('hehehe');
     expect.toInclude(notepad.content, 'hihihi');
+  });
+
+  it('testing the spy', function() {
+    spyOn(notepad, 'displayNotes');
   });
 });
