@@ -6,6 +6,10 @@ describe('Notepad', function() {
     console.log('calling before each...');
   });
 
+  it('is equal', function(){
+    expect.toEqual(1,1);
+  });
+
   it('----> it is empty*', function() {
     expect.toBeEmpty(notepad.content);
   });
