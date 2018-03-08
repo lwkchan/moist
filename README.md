@@ -66,4 +66,4 @@ describe('Notepad', function() {
 
 HTML Runner
 ------
-![HTML Moist Runner](/public/moisty screenshot.png?raw=true)
+![HTML Moist Runner](/public/moisty-screenshot.png?raw=true)
