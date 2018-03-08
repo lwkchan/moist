@@ -27,3 +27,8 @@
 .not-moist-img-display {
   display: '';
 }
+
+.expect-assert {
+  font-size: 24;
+  color: black !important;
+}
