@@ -2,7 +2,7 @@ An npm package to test your application using pure vanilla JavaScript.
 
 https://www.npmjs.com/package/moisty 
 
-## Quick Example Usage of Basic Matchers
+## Example Usage of Basic Matchers
 
 Example model:
 
