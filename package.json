@@ -1,6 +1,6 @@
 {
   "name": "moisty",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A moist package to test your application using vanilla JS",
   "main": "test_frameworks_examples.js",
   "scripts": {
