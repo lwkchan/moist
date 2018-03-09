@@ -22,22 +22,22 @@ Expect.prototype.toBeTrue = function() {
   } else {
     return false
   }
-}
+};
 
 var expect = new Expect(1+2);
-var expect2 = new Expect(["cat"])
-var expect3 = new Expect(1+2 === 3)
+var expect2 = new Expect(["cat"]);
+var expect3 = new Expect(1+2 === 3);
 
-expect.toEqual(4)
-expect2.toInclude("cat")
-expect3.toBeTrue()
+expect.toEqual(4);
+expect2.toInclude("cat");
+expect3.toBeTrue();
 
 ////// SECOND WAY
 
 var expect = { 
   toEqual: function(assertion, expectation) {
     if (assertion === expectation) {
-      console.log "cool"
+      console.log("cool")
     } else {
       throw new Error("Equality assertion failed");
     }
@@ -48,8 +48,8 @@ var expect = {
   toBeTrue: function(assertion) {
     return assertion === true;
   }
-}
+};
 
-expect.toEqual(1,1)
-expect.toEqual([],"cat")
-expect.toEqual(1+1 === 2)
+expect.toEqual(1,1);
+expect.toEqual([],"cat");
+expect.toEqual(1+1 === 2);

@@ -1,8 +1,10 @@
-An npm package to test your application using pure vanilla JavaScript. https://www.npmjs.com/package/moisty 
+An npm package to test your application using pure vanilla JavaScript.
+
+https://www.npmjs.com/package/moisty 
 
 ## Quick Example Usage of Basic Matchers
 
-If this is your model:
+Example model:
 
 ```
 function Notepad(name) {
@@ -12,7 +14,7 @@ function Notepad(name) {
 }
 ```
 
-This could be your test file:
+Example test file:
 
 ```
 (function notepadIsEmpty() {
@@ -68,12 +70,12 @@ describe('Notepad', function() {
 
 ![HTML Moist Runner](/public/moisty-screenshot.png?raw=true)
 
-## NOW WITH GIFS!!
+## NOW WITH GIFS!
 
-### When your tests fail:
+### When tests fail:
 
 ![Not Moist](/public/spongebob-gif.gif)
 
-### When your tests pass:
+### When tests pass:
 
 ![Moist](/public/moist-gif.gif)
